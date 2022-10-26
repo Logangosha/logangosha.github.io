@@ -56,3 +56,11 @@ html * {
     /* cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
+
+/* FOOTER BUTTON EFFECTS .fb */
+.fb:hover > a > i {
+    color: #050038;
+}
+.fb:hover {
+    background-color: #ffd02f;
+}
