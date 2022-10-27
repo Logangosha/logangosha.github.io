@@ -57,11 +57,21 @@ html * {
     "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
 
+.section {
+    height: 100vh;
+}
+
 /* FOOTER BUTTON EFFECTS .fb */
 .fb:hover > a > i {
-    color: #050038;
+    color: #ffd02f;
 }
 .fb:hover {
+    background-color: #050038;
+}
+.fb {
     background-color: #ffd02f;
+}
+.fb > a > i {
+    color: #050038;
 }
 /* END */
