@@ -5,7 +5,6 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 /* BACKGROUNDS */
 .bgYellow {
@@ -49,8 +48,8 @@ html,body
 
 /* FONTS */
 html * {
-    font-family: sans-serif;
-    font-family: 'Arvo', serif; /*
+    /* font-family: sans-serif; */
+    font-family: 'Roboto','Arvo', serif; /*
     font-family: 'Heebo', sans-serif;
     font-family: 'Outfit', sans-serif; */
     /* cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -58,7 +57,7 @@ html * {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* FOOTER BUTTON EFFECTS .fb */
