@@ -1,0 +1,60 @@
+
+.typewriter {
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 22;
+      --badge-size-factor:clamp(0.4rem, calc(0.4rem + ((1vw - 0.3rem) * 1.2)), 1rem);
+  
+   .tw {
+      font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.3rem) * 7.5)), 5rem);
+      font-weight: 400;
+      margin-inline: auto;
+      margin-bottom: 1rem;
+      width: max-content;
+      position: relative;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: inherit;
+      }
+  
+      &::before {
+        background: var(--c-bg);
+        animation: typewriter var(--typewriterSpeed)
+          steps(var(--typewriterCharacters)) 1s forwards;
+      }
+  
+      &::after {
+        width: 0.1em;
+        background: var(--c-text);
+        animation: typewriter var(--typewriterSpeed)
+            steps(var(--typewriterCharacters)) 1s forwards,
+          blink 750ms steps(var(--typewriterCharacters)) infinite;
+      }
+    }
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      line-height: inherit;
+    }
+  }
