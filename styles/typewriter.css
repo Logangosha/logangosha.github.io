@@ -1,60 +1,22 @@
-
 .typewriter {
-    --typewriterSpeed: 6s;
-    --typewriterCharacters: 22;
-      --badge-size-factor:clamp(0.4rem, calc(0.4rem + ((1vw - 0.3rem) * 1.2)), 1rem);
-  
-   .tw {
-      font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.3rem) * 7.5)), 5rem);
-      font-weight: 400;
-      margin-inline: auto;
-      margin-bottom: 1rem;
-      width: max-content;
-      position: relative;
-  
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition: inherit;
-      }
-  
-      &::before {
-        background: var(--c-bg);
-        animation: typewriter var(--typewriterSpeed)
-          steps(var(--typewriterCharacters)) 1s forwards;
-      }
-  
-      &::after {
-        width: 0.1em;
-        background: var(--c-text);
-        animation: typewriter var(--typewriterSpeed)
-            steps(var(--typewriterCharacters)) 1s forwards,
-          blink 750ms steps(var(--typewriterCharacters)) infinite;
-      }
-    }
-  }
-  
-  @keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    to {
-      background: transparent;
-    }
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-      line-height: inherit;
-    }
-  }
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ffd02f; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: auto; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: ffd02f; }
+}

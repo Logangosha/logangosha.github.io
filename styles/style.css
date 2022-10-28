@@ -6,45 +6,21 @@ html,body
     margin: 0px;
     padding: 0px;
 }
+
+/* COLOR PALLETS */
 /* BACKGROUNDS */
-.bgYellow {
-    background-color: #ffd02f; 
-}
-.bgBlueWhite {
-    background-color: #F0F2FC; 
-}
-
-.bgWhite {
-    background-color:#FFFFFF;
-}
-
-.bgBlack {
-    background-color: #050038; 
-}
-.bgBlue {
-    background-color: #3f53d9; 
-}
+.bgYellow {background-color: #ffd02f;}
+.bgBlueWhite {background-color: #F0F2FC; }
+.bgWhite {background-color:#FFFFFF;}
+.bgBlack {background-color: #050038;}
+.bgBlue {background-color: #3f53d9;}
 
 /* TEXT COLOR */
-.tcYellow {
-    color:#ffd02f;
-}
-
-.tcBlueWhite {
-    color:#F0F2FC;
-}
-
-.tcWhite {
-    color:#FFFFFF;
-}
-
-.tcBlack {
-    color:#050038;
-}
-
-.tcBlue {
-    color:#3f53d9;
-}
+.tcYellow {color:#ffd02f;}
+.tcBlueWhite {color:#F0F2FC;}
+.tcWhite {color:#FFFFFF;}
+.tcBlack {color:#050038;}
+.tcBlue {color:#3f53d9;}
 
 /* FONTS */
 html * {
@@ -56,22 +32,12 @@ html * {
     "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
 
-.section {
-    min-height: 100vh;
-}
+/* Section definition */
+.section {min-height: 100vh;}
 
 /* FOOTER BUTTON EFFECTS .fb */
-.fb:hover > a > i {
-    color: #ffd02f;
-}
-.fb:hover {
-    background-color: #050038;
-}
-.fb {
-    background-color: #ffd02f;
-}
-.fb > a > i {
-    color: #050038;
-}
-
+.fb:hover > a > i {color: #ffd02f;}
+.fb:hover {background-color: #050038;}
+.fb {background-color: #ffd02f;}
+.fb > a > i {color: #050038;}
 /* END */
