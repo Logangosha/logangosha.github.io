@@ -12,32 +12,71 @@ html,body
 .bgYellow {background-color: #ffd02f;}
 .bgBlueWhite {background-color: #F0F2FC; }
 .bgWhite {background-color:#FFFFFF;}
-.bgBlack {background-color: #050038;}
+.bgNavy {background-color: #050038;}
+.bgBlack {background-color: black;}
 .bgBlue {background-color: #3f53d9;}
 
 /* TEXT COLOR */
 .tcYellow {color:#ffd02f;}
 .tcBlueWhite {color:#F0F2FC;}
 .tcWhite {color:#FFFFFF;}
-.tcBlack {color:#050038;}
+.tcNavy {color:#050038;}
+.tcBlack {color:black;}
 .tcBlue {color:#3f53d9;}
 
 /* FONTS */
 html * {
-    /* font-family: sans-serif; */
-    font-family: 'Roboto','Arvo', serif; /*
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Outfit', sans-serif; */
-    /* cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+    /* font-family: 'Roboto', Helvetica;  */
+    font-family: 'Outfit'; 
+   
+    /* "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
 
-/* Section definition */
-.section {min-height: 100vh;}
+/* typeography for sections*/
+h1.landing {
+    font-weight:900;
+    font-size: 5em;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+p.landing {
+    font-weight:400;
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
 
-/* FOOTER BUTTON EFFECTS .fb */
-.fb:hover > a > i {color: #ffd02f;}
-.fb:hover {background-color: #050038;}
-.fb {background-color: #ffd02f;}
-.fb > a > i {color: #050038;}
+button.landing {
+    font-weight:600;
+    font-size: 1.5em;
+}
+
+.hrText {
+    display: inline-block;
+    position: relative;
+    padding: 0 1rem;
+    
+}
+.hrText::before,
+.hrText::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        border-top: 1px solid white;
+        top: 50%;
+        width: 1rem;
+      }
+  
+      .hrText::after {
+        left: 100%;
+      }
+  
+      .hrText::before {
+        right: 100%;
+      }
+
+/* Section definition */
+.section {min-height: 75vh;}
+
+
 /* END */
