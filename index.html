@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OkcTechHelp.com</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -9,10 +10,11 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/typewriter.css">
         <link rel="stylesheet" type="text/css" href="styles/animate.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/a74cbb3bcd.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <div class="container-fluid m-0 p-0"> <!--style="background-image: url(images/Nanoleaf-Essentials-smart-lighting-basics-collection-01.jpeg); background-position:left center; background-repeat: no-repeat; background-size: cover;"-->
+    <body ontouchstart="">
+        <div id="first" class="container-fluid m-0 p-0" type="button" onclick="smoothScroll(document.getElementById('second'))"> <!--style="background-image: url(images/Nanoleaf-Essentials-smart-lighting-basics-collection-01.jpeg); background-position:left center; background-repeat: no-repeat; background-size: cover;"-->
             <div class="row m-0 p-0 justify-content-center align-items-center section bgBlue" style="background-image: url(images/computer-repair-blur.png); background-position:center center; background-repeat: no-repeat; background-size: cover;">
                 <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 align-items-center my-5 p-0">
                     <div class="text-center wow pulse bg-transparent" data-wow-duration="2s">
@@ -23,17 +25,17 @@
                             Get help with your technology
                         </p>
                         <div class="d-grid">
-                            <button class="btn btn-primary p-3 landing">
+                            <button id="getInContactButton" class="btn btn-primary p-3 landing">
                                 Get in Contact
                             </button>
-                            <button class="btn btn-outline-light p-3 mt-2 landing">
+                            <button id="scrollLearnMoreButton" class="btn btn-outline-light p-3 mt-2 landing">
                                 Learn More <i class="fa-solid fa-arrow-down-short-wide"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row m-0 p-4 justify-content-center bgBlack">
+            <div id="second" class="second row m-0 p-4 justify-content-center bgBlack">
                 <!-- <div class="col-12 mt-5 text-center"><h2 class="mt-5 SectionContent">Who We Are</h2></div> -->
                 <div class="col-sm-12 col-md-12 col-lg-7 my-5 wow slideInRight order-sm-1 order-md-1 order-lg-2 text-center" data-wow-delay=".25s">
                     <img src="images/undraw_experts_re_i40h.svg" width="100%" class="img-fluid">
@@ -52,7 +54,7 @@
                     <h2 class="SectionContent tcWhite">What We Do</h2>
                     <p class="SectionContent tcWhite">We are here for Oklahomans to provide <b>professional and affordable tech support.</b></p>
                     <div class="d-grid">
-                        <button class="btn btn-warning p-3 SectionContent bgYellow">Learn More</button>
+                        <button id="learnMoreButton" class="btn btn-warning p-3 SectionContent bgYellow">Services We Provide</button>
                     </div>
                 </div>
             </div>
@@ -78,5 +80,17 @@
         <script src="https://kit.fontawesome.com/c8d01ee786.js" crossorigin="anonymous"></script>
         <script src="js/wow.min.js"></script>
         <script> new WOW().init();</script>
+        <script type="text/javascript">
+            document.getElementById("getInContactButton").onclick = function () {
+                location.href = "contact.html";};
+            document.getElementById("learnMoreButton").onclick = function () {
+                location.href = "services.html";};
+        </script>
+        <script type="text/javascript">
+            $(scrollLearnMoreButton).click(function() {
+            $('html,body').animate({scrollTop: 
+            $(".second").offset().top},'slow');
+            });
+        </script>
     </body>
 </html>
