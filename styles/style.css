@@ -51,6 +51,10 @@ html * {
   background-color: #ffd02f;
   color: black;
 }
+.social:active {
+  background-color: #ffd02f;
+  color: black;
+}
 
 h2.text-shadow {text-shadow: 3px 3px black;}
 h2.text-shadow-white {text-shadow: 3px 3px white;}
