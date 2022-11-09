@@ -6,34 +6,42 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/contact.css">
         <link rel="stylesheet" href="styles/typewriter.css">
         <link rel="stylesheet" type="text/css" href="styles/animate.css">
         <script src="https://kit.fontawesome.com/a74cbb3bcd.js" crossorigin="anonymous"></script>
     </head>
-    <body ontouchstart="">
-        <div class="container-fluid m-0 p-0"> <!--style="background-image: url(images/Nanoleaf-Essentials-smart-lighting-basics-collection-01.jpeg); background-position:left center; background-repeat: no-repeat; background-size: cover;"-->
-            <div class="row m-0 p-0 justify-content-center align-items-center section bgBlue" style="background-color: white;">
-                <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 align-items-center my-5 p-0">
-                    <div class="text-center wow pulse bg-transparent" data-wow-duration="2s">
-                        <h1 class="mb-0 landing">
-                            Contact Page
-                        </h1>
-                        <form action="https://formspree.io/f/mzbwybrl" method="POST">
-                        <label>
-                            Your email:
-                            <input type="email" name="email">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <body style="background-image: url(images/computer-repair-blur.png); background-position:center center; background-repeat: repeat-ys; background-size: cover;">
+    <div class="form">
+        <img class="img-fluid" src="images/undraw_navigator_a479.png">
+        <div class="title">Contact Us</div>
+        <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">First name</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Last name</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</>
+        </div>
+        <button type="text" class="submit">submit</button>
         </div>
     </body>
 </html>
+
+<!-- <form action="https://api.staticforms.xyz/submit" method="post">
+                            <input type="hidden" name="accessKey" value="dae82d68-5391-48d6-96fd-327eef78001a">
+                            <input class="" type="text" name="name"> 
+                            <input class="" type="text" name="subject"> 
+                            <input class="" type="text" name="email"> 
+                            <input class="" type="text" name="phone"> 
+                            <input type="text" name="honeypot" style="display: none;"> 
+                            <input type="hidden" name="redirectTo" value="https://okctechhelp.com/success.html"> 
+                            <input class="" type="submit" value="Submit" />
+                        </form> -->
