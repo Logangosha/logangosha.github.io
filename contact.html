@@ -6,32 +6,72 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/default.css">        
         <link rel="stylesheet" href="styles/contact.css">
         <link rel="stylesheet" href="styles/typewriter.css">
         <link rel="stylesheet" type="text/css" href="styles/animate.css">
         <script src="https://kit.fontawesome.com/a74cbb3bcd.js" crossorigin="anonymous"></script>
     </head>
     <body style="background-image: url(images/computer-repair-blur.png); background-position:center center; background-repeat: repeat-ys; background-size: cover;">
-    <div class="form">
-        <img class="img-fluid" src="images/undraw_navigator_a479.png">
-        <div class="title">Contact Us</div>
-        <div class="input-container ic1">
-            <input id="firstname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">First name</label>
+        <div class="container vh-100 p-0 m-0">
+            <div class="row justify-content-center p-0 m-0 my-auto">
+                <div class="col-9 text-center rounded p-4 m-0 bgWhite">
+                    <h1>Contact Us</h1>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="dae82d68-5391-48d6-96fd-327eef78001a">
+                        <div class="input-container ic1">
+                            <input id="name" name="name" class="input" type="text" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="name" class="placeholder"><i class="fa-solid fa-user"> </i>   Name</label>
+                        </div>
+                        <div class="input-container ic2">
+                            <input id="number" name="phone" class="input" type="text" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="number" class="placeholder"><i class="fa-solid fa-mobile"></i>  Number</label>
+                        </div>
+                        <div class="input-container ic2">
+                            <input id="email" name="email" class="input" type="text" placeholder=" " />
+                            <div class="cut cut-short"></div>
+                            <label for="email" class="placeholder"><i class="fa-solid fa-envelope"></i>  Email</label>
+                        </div>
+                        <div class="input-container input-area-container ic2">
+                            <textarea class="input input-area" name="message" type="text" id="input-message" placeholder=" "></textarea>
+                            <div class="cut cut-long"></div>
+                            <label for="email" class="placeholder"><i class="fa-solid fa-message"></i>  How can we help you?</label>
+                        </div>
+                        <div class="d-grid ic2 input-container">
+                            <input type="text" name="honeypot" style="display: none;"> 
+                            <input type="hidden" name="redirectTo" value="https://okctechhelp.com/success.html"> 
+                            <input type="submit" value="Submit"  class="btn btn-primary bgBlue">
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="col-6 p-0 m-0 px-4 my-auto">
+                    <img src="images/undraw_working_re_ddwy.svg" width="100%" class="img-fluid">
+                </div> -->
+            </div>
         </div>
-        <div class="input-container ic2">
-            <input id="lastname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="lastname" class="placeholder">Last name</label>
-        </div>
-        <div class="input-container ic2">
-            <input id="email" class="input" type="text" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="email" class="placeholder">Email</>
-        </div>
-        <button type="text" class="submit">submit</button>
-        </div>
+        <!-- <div class="form">
+            <div class="title">Contact Us</div>
+            <div class="input-container ic1">
+                <input id="name" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="name" class="placeholder"><i class="fa-solid fa-user"> </i>   Name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="number" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="number" class="placeholder"><i class="fa-solid fa-mobile"></i>  Number</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="email" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder"><i class="fa-solid fa-envelope"></i>  Email</label>
+            </div>
+            <div class="d-grid mt-5 input-container">
+                <button type="text" class="btn btn-primary">Submit</button>
+            </div>
+        </div> -->
     </body>
 </html>
 
