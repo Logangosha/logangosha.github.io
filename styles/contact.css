@@ -1,32 +1,31 @@
 body {
     align-items: center;
-    background-color: #000;
+    /* background-color: #000; */
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url(images/computer-repair-blur.png);
+    /* background-image: url(images/computer-repair-blur.png);
     background-position:center center; 
     background-repeat: repeat-ys; 
-    background-size: cover;
+    background-size: cover; */
   }
   
   .form {
-    background-color: black;
+    background-color: white;
     box-sizing: border-box;
-    height: auto;
     padding: 20px;
     width: 100%;
   }
   
   .title {
-    color: #eee;
+    color: white;
     font-size: 36px;
     font-weight: 600;
     margin-top: 30px;
   }
   
   .subtitle {
-    color: #eee;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
@@ -38,39 +37,45 @@ body {
     width: 100%;
   }
 
+  .input-container-submit {
+    height: 80px;
+    position: relative;
+    width: 100%;
+  }
+
   .input-area-container {
-    height: 100px;
+    height: 80px;
     position: relative;
     width: 100%;
   }
   
   .ic1 {
-    margin-top: 40px;
-  }
-  
-  .ic2 {
     margin-top: 30px;
   }
   
+  .ic2 {
+    margin-top: 45px;
+  }
+  
   .input {
-    background-color: #303245;
+    background-color: #f0f5fc;
     border-radius: 12px;
-    border: 0;
+    border: solid 0 white;
     box-sizing: border-box;
-    color: #eee;
+    color: black;
     font-size: 18px;
     height: 100%;
     outline: 0;
-    padding: 4px 20px 0;
+    padding: 5px 20px 0;
     width: 100%;
   }
 
   .input-area {
-    background-color: #303245;
+    background-color: #f0f5fc;
     border-radius: 12px;
-    border: 0;
+    border: solid 0 white;
     box-sizing: border-box;
-    color: #eee;
+    color: black;
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -80,7 +85,7 @@ body {
   }
   
   .cut {
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -98,13 +103,13 @@ body {
     width: 150px;
   }
   
-  .input:focus ~ .cut,
+  /* .input:focus ~ .cut,
   .input:not(:placeholder-shown) ~ .cut {
     transform: translateY(8px);
-  }
+  } */
   
   .placeholder {
-    color: white;
+    color: black;
     background-color: transparent;
     left: 20px;
     line-height: 14px;
@@ -113,22 +118,23 @@ body {
     transform-origin: 0 ;
     transition: transform 200ms, color 200ms;
     top: 20px;
+    opacity: 1;
   }
   
   .input:focus ~ .placeholder,
   .input:not(:placeholder-shown) ~ .placeholder {
-    transform: translateY(-30px) translateX(10px) scale(0.75);
+    transform: translateY(-45px) translateX(0px) scale(.9);
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
-    color: white;
+    color: black;
   }
   
   .input:focus ~ .placeholder {
-    color: white;
+    color: black;
   }
   
-  .submit {
+  /* .submit {
     background-color: #08d;
     border-radius: 12px;
     border: 0;
@@ -141,15 +147,23 @@ body {
     outline: 0;
     text-align: center;
     width: 100%;
-  }
-  
-  .submit:active {
-    background-color: #06b;
-  }
+  } */
   
   h1 {
-    font-weight:900;
-    font-size: 2.5em;
-    color: #3f53d9;
-    text-shadow: 3px 3px black;
-}
+    font-weight:700;
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 2px 2px black;
+    }
+
+  .submit {
+    font-weight: 600;
+    font-size: 2em;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 601px) {
+        h1 {
+          font-size: 2.5em;
+        }
+      }
