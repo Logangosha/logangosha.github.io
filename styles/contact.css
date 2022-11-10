@@ -155,15 +155,27 @@ body {
     color: white;
     text-shadow: 2px 2px black;
     }
+  p {
+    font-weight:400;
+    font-size: 1em;
+  }
 
   .submit {
     font-weight: 600;
     font-size: 2em;
     }
+ a {
+    font-weight: 600;
+    font-size: 2em;
+ }
 
     /* Media Queries */
     @media screen and (max-width: 601px) {
         h1 {
           font-size: 2.5em;
         }
+        .submit {
+            font-weight: 600;
+            font-size: 1.3em;
+            }
       }
