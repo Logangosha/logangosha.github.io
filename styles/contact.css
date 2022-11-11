@@ -9,6 +9,11 @@ body {
     background-repeat: repeat-ys; 
     background-size: cover; 
   }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   .form {
     background-color: white;
