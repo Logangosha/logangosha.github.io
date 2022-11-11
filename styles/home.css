@@ -101,6 +101,11 @@ button.landing {
     font-size: 1.5em;
 }
 
+a.landing {
+  font-weight:600;
+  font-size: 1.5em;
+}
+
 .hrText {
     display: inline-block;
     position: relative;
