@@ -6,6 +6,27 @@ html,body
     margin: 0px;
     padding: 0px;
 }
+nav
+{
+    visibility: hidden;
+    display: none;
+   background-color: black  !important;
+}
+nav > div > a:hover {
+ color: white !important;
+}
+nav > div > a:active {
+color: white !important;
+}
+nav > div > a:link {
+color: white !important;
+font-size: 1em !important;
+}
+nav > div > a:visited {
+color: white !important;
+}
+   
+
 
 /* COLOR PALLETS */
 /* BACKGROUNDS */
@@ -14,15 +35,15 @@ html,body
 .bgWhite {background-color:#FFFFFF;}
 .bgNavy {background-color: #050038;}
 .bgBlack {background-color: black;}
-.bgBlue {background-color: #3f53d9;}
-
+.bgBlue {background-color: blue}
+/*  #3f53d9; */
 /* TEXT COLOR */
 .tcYellow {color:#ffd02f;}
 .tcBlueWhite {color:#F0F2FC;}
 .tcWhite {color:#FFFFFF;}
 .tcNavy {color:#050038;}
 .tcBlack {color:black;}
-.tcBlue {color:#3f53d9;}
+.tcBlue {color:blue;}
 
 /* FONTS */
 html * {

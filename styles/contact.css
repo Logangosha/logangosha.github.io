@@ -4,10 +4,10 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    /* background-image: url(images/computer-repair-blur.png);
+    background-image: url(images/computer-repair-blur.png);
     background-position:center center; 
     background-repeat: repeat-ys; 
-    background-size: cover; */
+    background-size: cover; 
   }
   
   .form {
