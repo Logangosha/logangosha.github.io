@@ -41,9 +41,14 @@ color: white !important;
 .tcYellow {color:#ffd02f;}
 .tcBlueWhite {color:#F0F2FC;}
 .tcWhite {color:#FFFFFF;}
-.tcNavy {color:#050038;}
+.tcNavy {color:#243354;}
 .tcBlack {color:black;}
 .tcBlue {color:#0000ff;}
+
+/* Border color */
+.bcNavy {border-color:#243354 !important;}
+.bcYellow {border-color:#ffd02f !important;}
+.bcWhite {border-color:#FFFFFF !important;}
 
 /* FONTS */
 html * {
@@ -51,3 +56,6 @@ html * {
     font-family: 'Outfit'; 
     /* "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
+
+/* Section definition */
+.section {min-height: 100vh;}
