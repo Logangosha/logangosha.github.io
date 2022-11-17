@@ -49,6 +49,7 @@ color: white !important;
 .bcNavy {border-color:#243354 !important;}
 .bcYellow {border-color:#ffd02f !important;}
 .bcWhite {border-color:#FFFFFF !important;}
+.bcBlue {border-color:#0000ff;}
 
 /* FONTS */
 html * {
@@ -59,3 +60,6 @@ html * {
 
 /* Section definition */
 .section {min-height: 100vh;}
+
+/* Section definition */
+.half_section {min-height: 50vh;}
