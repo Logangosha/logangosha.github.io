@@ -142,3 +142,11 @@ h2.SectionContent {
   }
   
 }
+@media screen and (max-width: 800px) {
+ 
+  h2 {
+    font-weight:500;
+    font-size: 1.6em;
+  }
+  
+}
