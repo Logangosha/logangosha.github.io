@@ -3,67 +3,27 @@
 /* typeography for sections*/
 
 /* Social Media */
-.social {
-  background-color: #ffd02f;
-  color: black;
-  height: 15em;
+.s0M > i{
+  color: blue;
 }
-.social > a {
-  font-size: 4em;
-  position: relative;
-  top: 30%;
-}
-
-.google:hover {
-  background: #dd4b39;
+.s0M:hover{
+  background-color: blue;
   color: white;
 }
-.facebook:hover {
-  background: #3B5998;
+.s0M:hover > i{
+  background-color: blue;
   color: white;
 }
-.yelp:hover {
-  background: #cb2027;
+.s0M:active{
+  background-color: blue;
+  color: white;
+}
+.s0M:active > i{
+  background-color: blue;
   color: white;
 }
 
-.google:hover > a{
-  background: #dd4b39;
-  color: white;
-}
-.facebook:hover > a{
-  background: #3B5998;
-  color: white;
-}
-.yelp:hover > a{
-  background: #cb2027;
-  color: white;
-}
 
-.google {
-  background: white;
-  color: #dd4b39;
-}
-.facebook {
-  background: white;
-  color: #3B5998;
-}
-.yelp {
-  background: white;
-  color: #cb2027;
-}
-.google > a {
-  background: white;
-  color: #dd4b39;
-}
-.facebook > a {
-  background: white;
-  color: #3B5998;
-}
-.yelp > a {
-  background: white;
-  color: #cb2027;
-}
 
 h2.text-shadow {text-shadow: 3px 3px black;}
 h2.text-shadow-white {text-shadow: 3px 3px white;}

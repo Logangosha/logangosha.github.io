@@ -1,97 +1,145 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OkcTechHelp.com</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/default.css">
-        <link rel="stylesheet" href="styles/home.css">
-        <link rel="stylesheet" href="styles/typewriter.css">
-        <link rel="stylesheet" type="text/css" href="styles/animate.css">
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a74cbb3bcd.js" crossorigin="anonymous"></script>
-    </head>
-    <body ontouchstart="">
-        <div class="container-fluid m-0 p-0"> <!--style="background-image: url(images/Nanoleaf-Essentials-smart-lighting-basics-collection-01.jpeg); background-position:left center; background-repeat: no-repeat; background-size: cover;"-->
-            <!-- <nav class="navbar bg-black p-0 py-2 m-0 sticky-top">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OkcTechHelp.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/typewriter.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a74cbb3bcd.js" crossorigin="anonymous"></script>
+</head>
+
+<body ontouchstart="">
+    <div class="container-fluid m-0 p-0">
+        <!--style="background-image: url(images/Nanoleaf-Essentials-smart-lighting-basics-collection-01.jpeg); background-position:left center; background-repeat: no-repeat; background-size: cover;"-->
+        <!-- <nav class="navbar bg-black p-0 py-2 m-0 sticky-top">
                 <div class="container-fluid bgBlack">
                 <a class="navbar-brand tcWhite ps-3" href="#">Okc Tech<br>Help.com</a>
                 <a class="tcWhite bgBlack p-3" href="tel:4056932940">CALL: (405) 693-2940</a> 
                 </div>
             </nav> -->
-            <div class="row m-0 p-0 justify-content-center align-items-center section" style="background-image: url(images/background.jpg); background-position:center center; background-repeat: no-repeat; background-size: cover;">
-                <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 align-items-center my-5 p-0">
-                    <div class="text-center wow pulse bg-transparent" data-wow-duration="2s">
-                        <h1 class="mb-0 landing">
-                            <b>OKC<br>TECH<br>HELP</b>
-                        </h1>
-                        <p class="mb-3 landing hrText">
-                            Get help with your technology
-                        </p>
-                        <div class="d-grid">
-                            <button id="getInContactButton" class="btn btn-primary border-0 bgBlue tcWhite p-3 landing">
-                                Get in Contact
-                            </button>
-                            <button id="scrollLearnMoreButton" class="btn btn-outline-light p-3 mt-2 landing">
-                                Learn More <i class="fa-solid fa-arrow-down-short-wide"></i>
-                            </button>
-                        </div>
+        <div class="row m-0 p-0 justify-content-center align-items-center section"
+            style="background-image: url(images/background.jpg); background-position:center center; background-repeat: no-repeat; background-size: cover;">
+            <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 align-items-center my-5 p-0">
+                <div class="text-center wow pulse bg-transparent" data-wow-duration="2s">
+                    <h1 class="mb-0 landing">
+                        <b>OKC<br>TECH<br>HELP</b>
+                    </h1>
+                    <p class="mb-3 landing hrText">
+                        Get help with your technology
+                    </p>
+                    <div class="d-grid">
+                        <button id="getInContactButton" class="btn btn-primary border-0 bgBlue tcWhite p-3 landing">
+                            Get in Contact
+                        </button>
+                        <button id="scrollLearnMoreButton" class="btn btn-outline-light p-3 mt-2 landing">
+                            Learn More <i class="fa-solid fa-arrow-down-short-wide"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div id="second" class="second row m-0 p-4 justify-content-center section bgBlack">
-                <div class="col-sm-12 col-md-12 col-lg-7 my-5 my-auto wow fadeInUp order-sm-1 order-md-1 order-lg-2 text-center" data-wow-delay="1s">
-                    <img src="images/undraw_experts_re_i40h.svg" width="100%" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-5 text-center my-auto order-sm-2 order-md-2 order-lg-1">
-                    <h2 class="SectionContent tcWhite text-shadow">Who We Are</h2>
-                    <p class="SectionContent tcWhite">OkcTechHelp.com is an Oklahoma small business run by tech specialists, <b>looking to help you with your technology.</b></p>
+        </div>
+        <div id="second" class="second row m-0 p-4 justify-content-center section bgBlack">
+            <div class="col-sm-12 col-md-12 col-lg-7 my-5 my-auto wow fadeInUp order-sm-1 order-md-1 order-lg-2 text-center"
+                data-wow-delay="1s">
+                <img src="images/undraw_experts_re_i40h.svg" width="100%" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 text-center my-auto order-sm-2 order-md-2 order-lg-1">
+                <h2 class="SectionContent tcWhite text-shadow">Who We Are</h2>
+                <p class="SectionContent tcWhite">OkcTechHelp.com is an Oklahoma small business run by tech specialists,
+                    <b>looking to help you with your technology.</b></p>
+            </div>
+        </div>
+        <div class="row m-0 p-4 justify-content-center section bgBlue">
+            <div class="col-sm-12 col-md-12 col-lg-7 wow fadeInUp my-5 my-auto order-sm-1 order-md-1 order-lg-1 text-center"
+                data-wow-delay="1s">
+                <img src="images/technical-support-guy.webp" width="100%" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 text-center my-auto pb-5 order-sm-2 order-md-2 order-lg-2">
+                <h2 class="SectionContent tcWhite">What We Do</h2>
+                <p class="SectionContent tcWhite">We are here for Oklahomans to provide <b>professional and affordable
+                        tech support.</b></p>
+                <div class="d-grid wow pulse">
+                    <button id="learnMoreButton"
+                        class="btn btn-dark border border-2 bgWhite tcNavy w-75 mx-auto p-3 mt-2 SectionContent">Our
+                        Services</button>
                 </div>
             </div>
-            <div class="row m-0 p-4 justify-content-center section bgBlue">
-                <div class="col-sm-12 col-md-12 col-lg-7 wow fadeInUp my-5 my-auto order-sm-1 order-md-1 order-lg-1 text-center" data-wow-delay="1s">
-                    <img src="images/technical-support-guy.webp" width="100%" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-5 text-center my-auto pb-5 order-sm-2 order-md-2 order-lg-2">
-                    <h2 class="SectionContent tcWhite">What We Do</h2>
-                    <p class="SectionContent tcWhite">We are here for Oklahomans to provide <b>professional and affordable tech support.</b></p>
-                    <div class="d-grid wow pulse">
-                        <button id="learnMoreButton" class="btn btn-dark border border-2 bgWhite tcNavy w-75 mx-auto p-3 mt-2 SectionContent">Our Services</button>
+        </div>
+        <div class="row m-0 p-0 justify-content-center align-items-center bgWhite">
+            <div class="col-sm-12 px-4 col-md-12 col-lg-5 text-center p-5 order-sm-2 order-md-2 order-lg-1">
+                <h2 class="SectionContent tcBlack">Where We Help</h2>
+                <p class="SectionContent tcBlack">Our services reach across the entire <b>Oklahoma City Metro Area.</b>
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7 p-0 wow fadeInUp order-sm-1 order-md-1 order-lg-2 text-center"
+                data-wow-delay="1s">
+                <img src="images/map.png" width="100%" class="img-fluid">
+            </div>
+        </div>
+        <div class="row m-0 p-0 justify-content-center bgBlack tcWhite" data-wow-duration="1s">
+            <div class="col-12 text-center mt-5 px-5">
+                <h2 class="SectionContent">Know someone who needs help?</h2>
+                <p class="SectionContent"><b>Share this link</b> to our site.</p>
+            </div>
+            <div class="col-12 text-center mb-5 my-auto">
+                <div class="field text-center">
+                    <div class="wow pulse" data-wow-duration="3s">
+                        <a class="tcWhite bgBlack m-auto d-inline p-2 wow pulse"><i
+                                class="fa-solid fa-link tcWhite"></i> https://okctechhelp.com/</a>
+                    </div>
+                    <p class="SectionContent mt-4">Or share our <b>number</b>.</p>
+                    <div class="wow pulse" data-wow-duration="3s">
+                        <a class="tcWhite bgBlack m-auto p-2" href="tel:4056932940"><i
+                                class="fa-solid fa-square-phone"></i> (405) 693-2940</a>
                     </div>
                 </div>
             </div>
-            <div class="row m-0 p-0 justify-content-center align-items-center bgWhite">
-                <div class="col-sm-12 px-4 col-md-12 col-lg-5 text-center p-5 order-sm-2 order-md-2 order-lg-1">
-                    <h2 class="SectionContent tcBlack">Where We Help</h2>
-                    <p class="SectionContent tcBlack">Our services reach across the entire <b>Oklahoma City Metro Area.</b></p>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-7 p-0 wow fadeInUp order-sm-1 order-md-1 order-lg-2 text-center" data-wow-delay="1s">
-                    <img src="images/map.png" width="100%" class="img-fluid">
-                </div>
+            <div class="col-12 text-center p-5 bgBlue wow bounceInUp">
+                <h2 class="SectionContent">Find us on social media!</h2>
             </div>
-            <div class="row m-0 p-0 justify-content-center bgBlack tcWhite" data-wow-duration="1s">
-                <div class="col-12 text-center mt-5 px-5">
-                    <h2 class="SectionContent">Know someone who needs help?</h2>
-                    <p class="SectionContent"><b>Share this link</b> to our site.</p>
-                </div>
-                <div class="col-12 text-center mb-5 my-auto">
-                    <div class="field text-center">
-                        <div class="wow pulse" data-wow-duration="3s">
-                            <a class="tcWhite bgBlack m-auto d-inline p-2 wow pulse"><i class="fa-solid fa-link tcWhite"></i> https://okctechhelp.com/</a>
-                        </div>
-                        <p class="SectionContent mt-4">Or share our <b>number</b>.</p>
-                        <div class="wow pulse" data-wow-duration="3s"> 
-                            <a class="tcWhite bgBlack m-auto p-2" href="tel:4056932940"><i class="fa-solid fa-square-phone"></i> (405) 693-2940</a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center p-5 bgBlue wow bounceInUp">
-                    <h2 class="SectionContent">Find us on social media!<br><i>(press logo)</i></h2>
-                </div>
-                <div class="loop--slider wow bounceInUp">
+        </div>
+        <div class="row p-0 m-0 mb-5 bgWhite justify-content-center text-center">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 s0M py-5"><i class="fa fa-facebook fa-4x tcBlue" aria-hidden="true"></i></div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 s0M py-5"><i class="fa fa-yelp fa-4x tcBlue" aria-hidden="true"></i></div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 s0M py-5"><i class="fa fa-google fa-4x tcBlue" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c8d01ee786.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <script type="text/javascript">
+        document.getElementById("getInContactButton").onclick = function () {
+            location.href = "./contact";
+        };
+        document.getElementById("learnMoreButton").onclick = function () {
+            location.href = "./services";
+        };
+    </script>
+    <script type="text/javascript">
+        $(scrollLearnMoreButton).click(function () {
+            $('html,body').animate({
+                scrollTop:
+                    $(".second").offset().top
+            }, 'slow');
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- <div class="loop--slider wow bounceInUp">
                     <div class="loop--slide--track ">
                         <div class="loop--slide">
                             <a href="https://yelp.com">
@@ -124,24 +172,5 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="col-6 p-0 m-0 col-lg-3 social text-center linkedin"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div> -->
-            </div>
-        </div>
-        <script src="https://kit.fontawesome.com/c8d01ee786.js" crossorigin="anonymous"></script>
-        <script src="js/wow.min.js"></script>
-        <script> new WOW().init();</script>
-        <script type="text/javascript">
-            document.getElementById("getInContactButton").onclick = function () {
-                location.href = "./contact";};
-            document.getElementById("learnMoreButton").onclick = function () {
-                location.href = "./services.html";};
-        </script>
-        <script type="text/javascript">
-            $(scrollLearnMoreButton).click(function() {
-            $('html,body').animate({scrollTop: 
-            $(".second").offset().top},'slow');
-            });
-        </script>
-    </body>
-</html>
+                </div> -->
+            <!-- <div class="col-6 p-0 m-0 col-lg-3 social text-center linkedin"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div> -->

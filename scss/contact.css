@@ -1,0 +1,14 @@
+.ex1 {
+  text-align: center;
+  background: #fff;
+}
+.ex1 i {
+  margin: 0 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.ex1 i:hover {
+  color: #ef43a1;
+  transform: scale(1.5);
+}/*# sourceMappingURL=contact.css.map */
