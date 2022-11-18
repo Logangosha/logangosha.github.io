@@ -63,3 +63,24 @@ html * {
 
 /* Section definition */
 .half_section {min-height: 50vh;}
+
+/* social media */
+.s0M > i{
+    color: blue;
+  }
+  .s0M:hover{
+    background-color: blue;
+    color: white;
+  }
+  .s0M:hover > i{
+    background-color: blue;
+    color: white;
+  }
+  .s0M:active{
+    background-color: blue;
+    color: white;
+  }
+  .s0M:active > i{
+    background-color: blue;
+    color: white;
+  }

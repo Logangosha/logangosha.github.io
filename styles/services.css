@@ -104,6 +104,12 @@ h2.SectionContent{
   text-decoration: none;
 }
 
+h2.SectionContent {
+  font-weight:700;
+  font-size: 3em;
+  padding: 0px !important;
+  margin: 0px!important;
+}
 
 
 /* Media Queeries */

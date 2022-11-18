@@ -2,29 +2,6 @@
 
 /* typeography for sections*/
 
-/* Social Media */
-.s0M > i{
-  color: blue;
-}
-.s0M:hover{
-  background-color: blue;
-  color: white;
-}
-.s0M:hover > i{
-  background-color: blue;
-  color: white;
-}
-.s0M:active{
-  background-color: blue;
-  color: white;
-}
-.s0M:active > i{
-  background-color: blue;
-  color: white;
-}
-
-
-
 h2.text-shadow {text-shadow: 3px 3px black;}
 h2.text-shadow-white {text-shadow: 3px 3px white;}
 
