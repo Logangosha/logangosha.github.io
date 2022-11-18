@@ -1,3 +1,76 @@
+/* TOP OF PAGE */
+h1.landing {
+  font-weight:700;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+p.landing {
+  font-weight:400;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+/* TYPEOGRAPHY */
+h2 {
+  font-weight:500;
+  font-size: 3em;
+}
+h3 {
+  font-weight:400;
+  font-size: 2.5em;
+}
+p {
+  font-weight:100;
+  font-size: 2em;
+}
+a {
+  font-weight:600 !important;
+  font-size: 2em !important;
+  padding: .5em !important;
+}
+
+/* ACCORDION */
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  background: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-label:hover {
+  background: black;
+}
+.tab-content {
+  max-height: 0;
+  color: White;
+  background: black;
+  transition: all 0.2s;
+}
+input:checked + .tab-label {
+  background: black;
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
 .service_section {
   min-height: fit-content;
 }
@@ -11,48 +84,55 @@
   color: white;
   word-wrap: break-word;
 }
-.service_section:hover > div > .service_section_content > h2 {
-  transform: translate(0%, -10%);
-  transition: .7s;
-  padding: 0%;
+
+/* FOOTER */
+h2.SectionContent{
+  font-weight:600;
+  font-size: 3em;
+  padding-bottom: .5em;
 }
-.service_section_content > p {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
+.field a{
+  background-color: blue;
+  border-bottom: solid 3px white;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 3em;
 }
-.service_section:hover > div > .service_section_content > p {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 2s linear;
-}
-.service_section_content > button {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s .5s, opacity 0s linear;
-}
-.service_section:hover > div > .service_section_content > button {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .5s linear;
+.field a:hover{
+  color: white;
+  opacity: .7;
+  text-decoration: none;
 }
 
-h1.landing {
-    font-weight:700;
-    font-size: 3.5em;
-    color: white;
-    text-shadow: 3px 3px black;
-}
-p.landing {
-    font-weight:400;
-    font-size: 1em;
-    color: white;
-    text-shadow: 2px 2px black;
-}
 
-@media all and (max-width: 500px) {
+
+/* Media Queeries */
+@media screen and (max-width: 601px) {
+  .field a {
+    font-size: 1.5em;
+  }
   .service_section_content {
     padding-right: .1rem!important;
     padding-left: .1rem!important;
   }
+  h2 {
+    font-weight:500;
+    font-size: 1.6em;
+  }
+  a {
+    font-weight:600 !important;
+    font-size: 2em !important;
+    padding-top: .5em !important;
+    padding-left: 0.1em !important;
+    padding-right: 0.1em !important;
+    padding-bottom: .5em !important;
+  }
+  .field a{
+    background-color: blue;
+    border-bottom: solid 3px white;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1em !important;
+  }
+  
 }
