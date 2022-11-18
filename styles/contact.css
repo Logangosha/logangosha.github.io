@@ -14,6 +14,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+h1.landing {
+  font-weight:700;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 3px black;
+}
   
   .form {
     background-color: white;
@@ -174,6 +181,30 @@ body {
     font-size: 2em;
  }
 
+ 
+h2.SectionContent{
+  font-weight:600;
+  font-size: 3em;
+  padding-bottom: .5em;
+}
+.field a{
+  background-color: blue;
+  border-bottom: solid 3px white;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 3em;
+}
+.field a:hover{
+  color: white;
+  opacity: .7;
+  text-decoration: none;
+}
+
+p {
+  font-weight:100;
+  font-size: 2em;
+}
+
     /* Media Queries */
     @media screen and (max-width: 601px) {
         h1 {
@@ -183,4 +214,11 @@ body {
             font-weight: 600;
             font-size: 1.3em;
             }
+        .field a{
+          background-color: blue;
+          border-bottom: solid 3px white;
+          width: fit-content;
+          text-decoration: none;
+          font-size: 1.5em !important;
+        }
       }
