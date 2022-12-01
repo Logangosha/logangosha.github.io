@@ -35,7 +35,7 @@ color: white !important;
 .bgWhite {background-color:#FFFFFF;}
 .bgNavy {background-color: #050038;}
 .bgBlack {background-color: black;}
-.bgBlue {background-color: blue}
+.bgBlue {background-color: #0000ff !important;} 
 /*  #3f53d9; */
 /* TEXT COLOR */
 .tcYellow {color:#ffd02f;}
@@ -43,13 +43,13 @@ color: white !important;
 .tcWhite {color:#FFFFFF;}
 .tcNavy {color:#243354;}
 .tcBlack {color:black;}
-.tcBlue {color:#0000ff;}
+.tcBlue {color:#0000ff !important;}
 
 /* Border color */
 .bcNavy {border-color:#243354 !important;}
 .bcYellow {border-color:#ffd02f !important;}
 .bcWhite {border-color:#FFFFFF !important;}
-.bcBlue {border-color:#0000ff;}
+.bcBlue {border-color:#0000ff !important;}
 
 /* FONTS */
 html * {
