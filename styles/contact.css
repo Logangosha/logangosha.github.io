@@ -188,7 +188,7 @@ h2.SectionContent{
   padding-bottom: .5em;
 }
 .field a{
-  background-color: blue;
+  background-color: #007BFF;
   border-bottom: solid 3px white;
   width: fit-content;
   text-decoration: none;
@@ -215,7 +215,7 @@ p {
             font-size: 1.3em;
             }
         .field a{
-          background-color: blue;
+          background-color: #007BFF;
           border-bottom: solid 3px white;
           width: fit-content;
           text-decoration: none;
