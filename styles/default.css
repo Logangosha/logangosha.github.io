@@ -66,6 +66,7 @@ html * {
 
 /* social media */
 .s0M > i{
+    font-size: 4rem !important;
     color: #007BFF;
   }
   .s0M:hover{

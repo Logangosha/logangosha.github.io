@@ -125,14 +125,14 @@ h2.SectionContent {
     font-weight:500;
     font-size: 1.6em;
   }
-  a {
+  /* a {
     font-weight:600 !important;
     font-size: 2em !important;
     padding-top: .5em !important;
     padding-left: 0.1em !important;
     padding-right: 0.1em !important;
     padding-bottom: .5em !important;
-  }
+  } */
   .field a{
     background-color: #007BFF;
     border-bottom: solid 3px white;
